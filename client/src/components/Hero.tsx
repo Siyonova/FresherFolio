@@ -44,8 +44,8 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative w-full min-h-screen mx-auto pt-20" data-testid="section-hero">
-      <div className="max-w-7xl mx-auto px-6 sm:px-16 py-16 sm:py-20 flex flex-col md:flex-row items-center gap-12">
+    <section className="relative w-full min-h-screen mx-auto pt-32 sm:pt-20" data-testid="section-hero">
+      <div className="max-w-7xl mx-auto px-6 sm:px-16 py-8 sm:py-20 flex flex-col md:flex-row items-center gap-12">
         <motion.div
           variants={textVariant}
           initial="hidden"
