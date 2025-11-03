@@ -53,16 +53,16 @@ export default function Hero() {
           className="flex-1"
         >
           <h1 className="font-black text-foreground text-4xl sm:text-5xl md:text-6xl lg:text-7xl" data-testid="text-hero-greeting">
-            Hi, I'm <span className="text-primary">Your Name</span>
+            Hi, I'm <span className="text-primary">Siyona Bonam</span>
           </h1>
           <p className="text-muted-foreground font-medium text-lg sm:text-xl md:text-2xl lg:text-3xl mt-4" data-testid="text-hero-subtitle">
             Computer Science Student
             <br className="sm:block hidden" />
-            at <span className="text-chart-2">IIIT Kancheepuram</span>
+            at <span className="text-chart-2">IIIT-DM Kancheepuram</span>
           </p>
           <p className="text-muted-foreground/90 text-base sm:text-lg mt-6 max-w-2xl" data-testid="text-hero-description">
-            Passionate about building innovative solutions and exploring cutting-edge technologies. 
-            Specialized in web development, machine learning, and software engineering.
+            Software engineer passionate about AI/ML, building scalable solutions, and solving real-world problems 
+            through code. Oracle Certified Generative AI Professional with hands-on experience in deep learning and automation.
           </p>
           <div className="flex gap-4 mt-8">
             <Button
@@ -100,7 +100,7 @@ export default function Hero() {
             <div className="absolute inset-0 bg-gradient-to-r from-primary to-chart-2 rounded-full blur-3xl opacity-30 animate-pulse"></div>
             <div className="relative w-full h-full flex items-center justify-center">
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-primary/20 to-chart-2/20 flex items-center justify-center backdrop-blur-sm border border-primary/20">
-                <div className="text-8xl md:text-9xl font-black text-primary/40">CS</div>
+                <div className="text-8xl md:text-9xl font-black text-primary/40">SB</div>
               </div>
             </div>
           </div>

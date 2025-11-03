@@ -25,33 +25,32 @@ const fadeIn = (direction: string, delay: number) => ({
   },
 });
 
-//todo: remove mock data - replace with real projects
 const projects = [
   {
-    name: "E-Commerce Platform",
+    name: "Building a Large Language Model from Scratch",
     description:
-      "Full-stack e-commerce application with user authentication, product management, shopping cart, and payment integration. Built with modern web technologies.",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
+      "Implementing LLM architecture step-by-step including tokenization, embeddings, attention mechanisms, and transformers. Training small-scale transformer models to understand text prediction and generation workflows.",
+    tags: ["Python", "Transformers", "Deep Learning", "NLP"],
     image: project1,
-    github: "#",
+    github: "https://github.com/Siyonova",
     demo: "#",
   },
   {
-    name: "Task Management System",
+    name: "Dynamic Pricing for E-Commerce using RL",
     description:
-      "Collaborative task management application with real-time updates, team collaboration features, and intuitive drag-and-drop interface.",
-    tags: ["React", "Firebase", "Tailwind CSS", "TypeScript"],
+      "Developed an RL-based pricing model to optimize product prices in real-time based on demand, competitor pricing, and market trends using Deep Q-Networks (DQN) and Proximal Policy Optimization (PPO).",
+    tags: ["Python", "DQN", "PPO", "Reinforcement Learning"],
     image: project2,
-    github: "#",
+    github: "https://github.com/Siyonova",
     demo: "#",
   },
   {
-    name: "Portfolio Website",
+    name: "Human Pose Estimation",
     description:
-      "Personal portfolio website showcasing projects and skills with modern design, smooth animations, and responsive layout.",
-    tags: ["React", "Framer Motion", "Three.js", "Tailwind"],
+      "Real-time human pose estimation model using OpenCV and DNN. Implemented key point detection and skeleton visualization for motion tracking and analysis with deep learning.",
+    tags: ["Python", "OpenCV", "DNN", "TensorFlow"],
     image: project3,
-    github: "#",
+    github: "https://github.com/Siyonova",
     demo: "#",
   },
 ];
@@ -124,21 +123,25 @@ export default function Projects() {
                       variant="default"
                       size="sm"
                       className="flex-1"
-                      onClick={() => console.log(`Demo clicked for ${project.name}`)}
+                      asChild
                       data-testid={`button-demo-${index}`}
                     >
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Demo
+                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        Demo
+                      </a>
                     </Button>
                     <Button
                       variant="outline"
                       size="sm"
                       className="flex-1"
-                      onClick={() => console.log(`GitHub clicked for ${project.name}`)}
+                      asChild
                       data-testid={`button-github-${index}`}
                     >
-                      <Github className="w-4 h-4 mr-2" />
-                      Code
+                      <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <Github className="w-4 h-4 mr-2" />
+                        Code
+                      </a>
                     </Button>
                   </div>
                 </CardContent>

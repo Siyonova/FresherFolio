@@ -1,133 +1,125 @@
-# Portfolio Website - IIIT Kancheepuram
+# Siyona Bonam - Professional Portfolio
 
 ## Overview
+Modern, responsive portfolio website for Siyona Bonam, Computer Science student at IIIT-DM Kancheepuram. Features dark theme, smooth scrolling navigation, and showcases projects, skills, and experience in AI/ML and software development.
 
-A modern, single-page portfolio website for a Computer Science student from IIIT Kancheepuram. The application features immersive 3D elements, smooth scrolling sections, and a dark professional aesthetic with interactive components. Built as a full-stack application with React frontend and Express backend, though currently functioning primarily as a static portfolio presentation.
+## Recent Changes (Nov 3, 2025)
+- Fully personalized with information from resume
+- Updated all sections with real data (no mock content)
+- Integrated actual contact information and social links
+- CGPA excluded per user request
+- All branding updated to "SB" (Siyona Bonam)
+
+## Project Architecture
+
+### Technology Stack
+- **Frontend**: React 18 + TypeScript + Vite
+- **Styling**: Tailwind CSS + shadcn/ui components
+- **Animations**: Framer Motion
+- **Icons**: Lucide React + React Icons (Simple Icons)
+- **Routing**: Wouter
+- **Forms**: React Hook Form + Zod validation
+- **Backend**: Express.js (minimal - serving frontend only currently)
+
+### Project Structure
+```
+client/
+├── src/
+│   ├── components/
+│   │   ├── Navbar.tsx          # Fixed navigation with smooth scroll
+│   │   ├── Hero.tsx            # Landing section with name and intro
+│   │   ├── About.tsx           # Overview and background
+│   │   ├── Experience.tsx      # Education, work experience, achievements
+│   │   ├── Projects.tsx        # Showcase of 3 main projects
+│   │   ├── Skills.tsx          # Technology stack icons
+│   │   ├── Contact.tsx         # Contact form and information
+│   │   ├── Footer.tsx          # Social links and copyright
+│   │   └── StarsCanvas.tsx     # Animated background
+│   ├── pages/
+│   │   └── Home.tsx            # Main page layout
+│   └── App.tsx                 # Root component with dark mode
+└── index.html                  # SEO meta tags and page title
+```
+
+## Personal Information
+
+### Contact Details
+- **Email**: bonamsiyona@gmail.com
+- **Phone**: +91 7981087644
+- **Location**: IIIT-DM Kancheepuram, Chennai, Tamil Nadu
+- **GitHub**: https://github.com/Siyonova
+- **LinkedIn**: https://www.linkedin.com/in/siyona-bonam
+
+### Education
+- B.Tech in Computer Science at IIIT-DM Kancheepuram (Nov 2022 - Present)
+- General Affairs Coordinator (June 2024 - April 2025)
+- Cultural Affairs Coordinator (July 2023 - April 2024)
+
+### Experience
+- **SDE Intern** at Chella Software, Madurai (May 2025 - July 2025)
+  - C binary file combiner for .DAT files
+  - Python automation tool for finance portfolios
+  - AI-assisted workflow implementation
+
+### Projects
+1. **Building a Large Language Model from Scratch** (Sep 2025 - Present)
+   - Technologies: Python, Transformers, Deep Learning, NLP
+   
+2. **Dynamic Pricing for E-Commerce using RL** (Feb 2025 - April 2025)
+   - Technologies: Python, DQN, PPO, Reinforcement Learning
+   
+3. **Human Pose Estimation** (Dec 2024 - Feb 2025)
+   - Technologies: Python, OpenCV, DNN, TensorFlow
+
+### Skills
+- **Languages**: C++, C, Python, JavaScript, Node.js
+- **Databases**: MySQL
+- **Tools**: Git, GitHub, Flutter, Figma, Android Studio
+- **ML/AI**: TensorFlow, OpenCV
+- **Core**: OOP, Data Structures
+
+### Achievements
+- Oracle Cloud Infrastructure 2025 Certified Generative AI Professional
+- National Player – Shooting (2021, 2022)
+- 2nd place in SGF Shooting at 64th National Shooting Championship (2020)
+
+## Features
+
+### Current Implementation
+- ✅ Responsive design (mobile, tablet, desktop)
+- ✅ Dark theme by default
+- ✅ Smooth scrolling navigation
+- ✅ Animated hero section with Framer Motion
+- ✅ Project showcase with generated placeholder images
+- ✅ Skills section with technology icons
+- ✅ Contact form (mock submission with toast notifications)
+- ✅ Working social media links
+- ✅ SEO optimization with meta tags
+
+### To-Do Items
+- [ ] Integrate real resume PDF for download button
+- [ ] Connect contact form to EmailJS or backend API
+- [ ] Add actual project demo links (currently placeholder)
+- [ ] Optional: Add blog section
+- [ ] Optional: Add testimonials/recommendations
+
+## Development
+
+### Running the Application
+```bash
+npm run dev
+```
+Application runs on port 5000 (Express serves both frontend and backend)
+
+### Design Guidelines
+See `design_guidelines.md` for complete design specifications including:
+- Color scheme (Primary: #0F172A, Secondary: #3B82F6, Accent: #10B981)
+- Typography (Poppins font family)
+- Component styling rules
+- Dark mode implementation
 
 ## User Preferences
-
-Preferred communication style: Simple, everyday language.
-
-## System Architecture
-
-### Frontend Architecture
-
-**Framework & Build System**
-- React 18 with TypeScript for type-safe component development
-- Vite as the build tool and development server
-- Wouter for lightweight client-side routing
-- Single-page application (SPA) with smooth scroll navigation
-
-**UI Component System**
-- Shadcn/ui components (New York style) for consistent design language
-- Radix UI primitives for accessible, unstyled components
-- Tailwind CSS for utility-first styling with custom design tokens
-- Framer Motion for animations and transitions
-- Custom dark mode theme with HSL-based color system
-
-**Design Pattern**
-- Component-based architecture with reusable UI elements
-- Section-based layout: Hero, About, Experience, Projects, Skills, Contact, Footer
-- Canvas-based background animations using HTML5 Canvas API
-- Responsive design with mobile-first approach
-- Typography system based on Poppins font family with predefined scales
-
-**State Management**
-- TanStack Query (React Query) for server state management
-- React hooks for local component state
-- Form handling with React Hook Form and Zod validation
-
-**3D & Visual Elements**
-- Three.js integration (via @react-three/fiber and @react-three/drei) prepared for 3D models
-- Custom stars canvas background animation
-- Gradient overlays and visual effects defined in CSS
-
-### Backend Architecture
-
-**Server Framework**
-- Express.js server with TypeScript
-- Vite middleware integration for development hot module replacement
-- HTTP server creation for potential WebSocket support
-
-**API Design**
-- RESTful API structure (routes prefixed with `/api`)
-- Placeholder route registration system ready for expansion
-- JSON request/response handling with body parsing
-
-**Storage Layer**
-- In-memory storage implementation (MemStorage class)
-- Interface-based storage design for easy swapping to persistent storage
-- CRUD operations defined for user management
-- Drizzle ORM configured for PostgreSQL integration (not yet implemented)
-
-**Session Management**
-- Express session configuration prepared
-- PostgreSQL session store support via connect-pg-simple
-
-### Data Architecture
-
-**Database Schema**
-- Drizzle ORM with PostgreSQL dialect configured
-- Users table with UUID primary keys, username, and password fields
-- Zod schema validation for type-safe data insertion
-- Migration system configured via drizzle-kit
-
-**Data Models**
-- User model with insert and select types
-- Schema-first design approach using Drizzle's table definitions
-- Type inference from database schema for compile-time safety
-
-### Design System
-
-**Color System**
-- HSL-based color variables for light/dark mode support
-- Custom color palette: primary (blue), secondary, muted, accent, destructive
-- Card and popover variants with separate border colors
-- Elevation system using opacity-based shadows
-
-**Spacing & Layout**
-- Tailwind spacing scale (4px increments)
-- Max-width container: 1280px (max-w-7xl)
-- Responsive padding: px-6 mobile, sm:px-16 desktop
-- Section vertical spacing: py-10 mobile, sm:py-16 desktop
-
-**Typography Scale**
-- Hero heading: 40px-80px responsive scale
-- Section headings: 30px-60px responsive scale
-- Body text: 16px-18px with relaxed leading
-- Poppins font family (weights 100-900)
-
-## External Dependencies
-
-### Frontend Libraries
-- **React Ecosystem**: react, react-dom, react-router (via wouter)
-- **UI Components**: @radix-ui/* (complete component library)
-- **Styling**: tailwindcss, postcss, autoprefixer, class-variance-authority, clsx, tailwind-merge
-- **Animations**: framer-motion, @gsap/react, gsap
-- **3D Graphics**: three, @react-three/fiber, @react-three/drei, maath
-- **Forms**: react-hook-form, @hookform/resolvers, zod
-- **Data Fetching**: @tanstack/react-query
-- **Icons**: lucide-react, react-icons
-- **Utilities**: date-fns, cmdk
-
-### Backend Libraries
-- **Server**: express, http
-- **Database**: drizzle-orm, @neondatabase/serverless, connect-pg-simple
-- **Development**: vite, tsx, esbuild
-- **Validation**: zod, drizzle-zod
-
-### Development Tools
-- **Build**: vite, @vitejs/plugin-react
-- **TypeScript**: typescript with strict mode enabled
-- **Linting**: ESM module system
-- **Replit Integration**: @replit/vite-plugin-runtime-error-modal, @replit/vite-plugin-cartographer, @replit/vite-plugin-dev-banner
-
-### Database
-- PostgreSQL (via Neon serverless driver)
-- Connection via DATABASE_URL environment variable
-- Drizzle Kit for schema management and migrations
-
-### Third-Party Services
-- Email functionality prepared (mock implementation ready for EmailJS or similar)
-- Asset hosting for images (attached_assets directory)
-- Font delivery via Google Fonts CDN
+- No CGPA should be displayed anywhere
+- Emphasize IIIT-DM Kancheepuram education
+- Highlight AI/ML and shooting achievements
+- Modern, professional design inspired by developer portfolios

@@ -5,10 +5,10 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
+    { icon: Github, href: "https://github.com/Siyonova", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/siyona-bonam", label: "LinkedIn" },
     { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Mail, href: "#", label: "Email" },
+    { icon: Mail, href: "mailto:bonamsiyona@gmail.com", label: "Email" },
   ];
 
   return (
@@ -16,9 +16,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 sm:px-16">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2">
-            <span className="text-primary font-bold text-lg">CS</span>
+            <span className="text-primary font-bold text-lg">SB</span>
             <span className="text-muted-foreground text-sm">
-              © {currentYear} Portfolio. All rights reserved.
+              © {currentYear} Siyona Bonam. All rights reserved.
             </span>
           </div>
 
@@ -28,10 +28,12 @@ export default function Footer() {
                 key={index}
                 variant="ghost"
                 size="icon"
-                onClick={() => console.log(`${link.label} clicked`)}
+                asChild
                 data-testid={`button-social-${link.label.toLowerCase()}`}
               >
-                <link.icon className="w-5 h-5" />
+                <a href={link.href} target="_blank" rel="noopener noreferrer">
+                  <link.icon className="w-5 h-5" />
+                </a>
               </Button>
             ))}
           </div>

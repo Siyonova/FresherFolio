@@ -58,7 +58,7 @@ export default function Navbar() {
             }}
             data-testid="logo"
           >
-            <span className="text-primary">CS</span>
+            <span className="text-primary">SB</span>
             <span className="text-foreground"> Portfolio</span>
           </div>
 

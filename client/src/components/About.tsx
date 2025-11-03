@@ -70,10 +70,12 @@ export default function About() {
           className="mt-6 text-muted-foreground/90 text-base sm:text-lg max-w-3xl leading-relaxed"
           data-testid="text-about-description"
         >
-          I'm a dedicated Computer Science student at IIIT Kancheepuram with a passion for 
-          creating innovative technological solutions. My journey in software development has 
-          equipped me with expertise in multiple programming languages, frameworks, and tools. 
-          I thrive on challenges and am always eager to learn and adapt to new technologies.
+          I'm a BTech Computer Science student at IIIT-DM Kancheepuram with a strong foundation in 
+          software development, machine learning, and system programming. My experience spans from 
+          developing production-ready tools at Chella Software to implementing cutting-edge deep learning 
+          models. I excel at problem-solving, independent work, and thrive in collaborative environments. 
+          Beyond academics, I'm a national-level shooting athlete, bringing the same precision and focus 
+          to my technical work.
         </motion.p>
 
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

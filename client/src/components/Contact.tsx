@@ -159,7 +159,7 @@ export default function Contact() {
                 <div>
                   <h3 className="text-foreground font-bold text-lg">Email</h3>
                   <p className="text-muted-foreground text-sm mt-1" data-testid="text-email">
-                    your.email@example.com
+                    bonamsiyona@gmail.com
                   </p>
                 </div>
               </CardContent>
@@ -173,7 +173,7 @@ export default function Contact() {
                 <div>
                   <h3 className="text-foreground font-bold text-lg">Location</h3>
                   <p className="text-muted-foreground text-sm mt-1" data-testid="text-location">
-                    IIIT Kancheepuram, Tamil Nadu, India
+                    IIIT-DM Kancheepuram, Chennai, Tamil Nadu
                   </p>
                 </div>
               </CardContent>
@@ -187,7 +187,7 @@ export default function Contact() {
                 <div>
                   <h3 className="text-foreground font-bold text-lg">Phone</h3>
                   <p className="text-muted-foreground text-sm mt-1" data-testid="text-phone">
-                    +91 XXXXX XXXXX
+                    +91 7981087644
                   </p>
                 </div>
               </CardContent>
