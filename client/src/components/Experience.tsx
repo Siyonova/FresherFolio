@@ -49,15 +49,15 @@ const experiences = [
   },
   {
     title: "Achievements & Recognition",
-    company: "Sports & Certifications",
+    company: "Sports & Honors",
     icon: Code,
     iconBg: "hsl(var(--chart-4))",
     date: "2020 - Present",
     points: [
-      "Oracle Cloud Infrastructure 2025 Certified Generative AI Professional",
       "National Player – Shooting: Qualified and competed in 2021 and 2022",
       "Secured 2nd place in SGF Shooting at the 64th National Shooting Championship, 2020",
       "Strong soft skills: Problem-solving, analytical thinking, teamwork, and time management",
+      "Leadership roles in college events and cultural activities",
     ],
   },
 ];
