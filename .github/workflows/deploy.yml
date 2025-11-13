@@ -31,7 +31,7 @@ jobs:
         run: npm ci
 
       - name: Build frontend
-        run: npm run build:frontend
+        run: npx vite build --base=/FresherFolio/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
